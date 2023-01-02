@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  background: hsl(233, 47%, 7%);
+}
+
+.container {
+  background: hsl(244, 38%, 16%);
+  color: hsl(0, 0%, 100%);
+  width: min(90vw, 300px);
+  margin: 1rem auto;
+  border-radius: 10px;
+}
+
+.image {
+  filter: opacity(40%);
+  width: 100%;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.text {
+  padding: 1.5rem;
+  text-align: center;
+}
+
+h2 {
+  margin: 0 0.35rem 1.5rem;
+}
+
+span {
+  color: hsl(277, 64%, 61%);
+}
+
+p {
+  line-height: 1.5;
+  color: hsla(0, 0%, 100%, 0.75);
+  font-size: 0.8rem;
+  font-family: "Lexend Deca", sans-serif;
+}
+
+.stats {
+  margin-top: 1.5rem;
+  text-transform: uppercase;
+}
+
+.stats-details {
+  padding-bottom: 1.2rem;
+  padding-top: 0.25rem;
+}
+
+@media screen and (min-width: 800px) {
+  .container {
+    display: flex;
+    height: 50vh;
+    width: 75vw;
+    margin: 8rem auto;
+    max-width: 750px;
+  }
+
+  .image {
+    width: 50%;
+    order: 2;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 10px;
+  }
+
+  .text {
+    text-align: left;
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  h2 {
+    margin: 0 auto 1rem;
+  }
+
+  .stats {
+    display: flex;
+    padding: 0 1rem;
+    justify-content: space-between;
+  }
+
+  .stats-details {
+    font-size: 0.5rem;
+  }
+}
